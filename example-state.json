@@ -1,0 +1,12 @@
+{
+  "speakers": {
+    "powerMode": "off",
+    "volume": 5,
+    "inputMode": "normal",
+    "bluetoothMode": "off"
+  },
+  "projector": {
+    "powerMode": "off",
+    "hdmiMode": "hdmi1"
+  }
+}

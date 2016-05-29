@@ -1,0 +1,6 @@
+.DS_Store
+alexa-application.json
+iot-thing-config.json
+/certs
+/lib
+/node_modules

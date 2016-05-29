@@ -1,0 +1,9 @@
+node node_modules/aws-iot-device-sdk/examples/echo-example.js  -f ./certs --test-mode=1 -g us-west-2 -H my-endpoint.iot.us-west-2.amazonaws.com --debug --thing-name Macbook
+
+irsend commands:
+
+irsend -d /run/lirc/lircd-lirc0 list "" ""
+irsend -d /run/lirc/lircd-lirc0 list Optoma ""
+irsend -d /run/lirc/lircd-lirc0 SEND_ONCE Optoma KEY_POWER
+
+sudo systemctl restart lircd_helper@lirc0

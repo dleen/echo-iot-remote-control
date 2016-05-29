@@ -1,0 +1,27 @@
+{
+  "name": "echo-projector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cp": "cp alexa-application.json iot-thing-config.json lib",
+    "build": "babel src -d lib && npm run cp",
+    "clean": "rm -r lib",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "author": "David Leen",
+  "license": "ISC",
+  "dependencies": {
+    "aws-iot-device-sdk": "^1.0.12"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.9.0",
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-1": "^6.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
+  }
+}
