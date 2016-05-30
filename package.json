@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cp": "cp alexa-application.json iot-thing-config.json lib",
-    "build": "babel src -d lib && npm run cp",
+    "build": "babel src -d lib",
     "clean": "rm -r lib",
     "test": "mocha --compilers js:babel-register"
   },

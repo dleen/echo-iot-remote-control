@@ -4,7 +4,7 @@ import { spy } from 'sinon';
 import Speaker, {
   calculateInputModeDelta,
   calculateVolumeDelta,
-  chainPromises } from '../src/Speaker';
+  chainPromises } from '../src/device/Speaker';
 
 describe('chainPromises', function () {
   it('should call the promises n times', function (done) {

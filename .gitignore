@@ -2,5 +2,6 @@
 alexa-application.json
 iot-thing-config.json
 /certs
+/config
 /lib
 /node_modules

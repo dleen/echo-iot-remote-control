@@ -1,4 +1,4 @@
-const alexaApplication = require('alexa-application.json');
+const alexaApplication = require('../config/alexa-application.json');
 
 /**
  * This sample demonstrates a simple skill built with the Amazon Alexa Skills Kit.

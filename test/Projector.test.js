@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { spy } from 'sinon';
 
-import Projector from '../src/Projector';
+import Projector from '../src/device/Projector';
 
 describe('Projector', function () {
   describe('#state', function () {

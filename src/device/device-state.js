@@ -2,7 +2,7 @@ import { thingShadow } from 'aws-iot-device-sdk';
 
 import MediaCenter from './MediaCenter';
 
-const iotThingConfig = require('./iot-thing-config.json');
+const iotThingConfig = require('../config/iot-thing-config.json');
 
 let thingShadows;
 let mediaCenter;
