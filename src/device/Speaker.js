@@ -18,10 +18,6 @@ const inputModeMapping = {
   // TODO: 5
 };
 
-export const callTimes = (n, f) => {
-  while(n-- > 0) f();
-}
-
 export const chainPromises = (n, pCreator) => {
   if (n === 0) return Promise.resolve();
   if (n === 1) return pCreator();
@@ -58,12 +54,13 @@ export function calculateVolumeDelta(currentVolume, targetVolume) {
 }
 
 export default class Speaker extends Device {
-  constructor(powerMode, volume, inputMode, bluetoothMode) {
+  constructor(powerMode, volume, inputMode, bluetoothMode, toggleMute) {
     super('Vizio');
     this.powerMode = powerMode;
     this._volume = volume;
     this._inputMode = inputMode;
     this.bluetoothMode = bluetoothMode;
+    this.toggleMute = toggleMute;
   }
 
   volumeUp = () => {
@@ -152,6 +149,10 @@ export default class Speaker extends Device {
     if (delta.bluetoothMode) {
       delta.bluetoothMode === 'on' ? this.bluetoothOn() : this.bluetoothOff();
     }
+    if (delta.toggleMute) {
+      this.mute();
+      this.toggleMute = delta.toggleMute;
+    }
   }
 
   get state() {
@@ -159,7 +160,8 @@ export default class Speaker extends Device {
       powerMode: this.powerMode,
       volume: this.volume,
       inputMode: this.inputMode,
-      bluetoothMode: this.bluetoothMode
+      bluetoothMode: this.bluetoothMode,
+      toggleMute: this.toggleMute
     }
   }
 
