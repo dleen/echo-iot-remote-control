@@ -1,0 +1,16 @@
+{
+  "intents": [
+    {
+      "intent": "GetHoroscope"
+    },
+    {
+      "intent": "MatchSign",
+      "slots": [
+        {
+          "name": "Power",
+          "type": "ON_OFF"
+        }
+      ]
+    }
+  ]
+}

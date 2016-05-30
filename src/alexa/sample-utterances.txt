@@ -1,0 +1,5 @@
+MatchSign what is the horoscope for {Power}
+MatchSign {Power}
+
+GetHoroscope what are my lucky numbers
+GetHoroscope tell me my lucky numbers
