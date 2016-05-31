@@ -1,0 +1,7 @@
+{
+  "name": "echo-projector",
+  "custom": {},
+  "plugins": [
+    "serverless-webpack-plugin"
+  ]
+}

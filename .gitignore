@@ -5,3 +5,10 @@ iot-thing-config.json
 /config
 /lib
 /node_modules
+
+# serverless
+admin.env
+.env
+
+# ignore _meta folder
+_meta
